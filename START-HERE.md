@@ -1,4 +1,4 @@
-# WYN Clarify (v0.3)
+# WYN Clarify (v0.3.1)
 
 **Purpose:** Help someone start with a high-level idea or practical problem and finish with a clear, focused plan for something they could build.
 
@@ -9,6 +9,8 @@
 **End product:** A right-sized, feature-level product requirements document. Privacy, integrations, complex workflows, and other requirements are added only when they matter to the actual idea.
 
 ## Using it
+
+For the least setup, paste `COPY-PASTE-PROMPT.txt` into a new chat and add your idea at the end. No tools or extensions are required. This applies to that conversation; a new chat may need the prompt again. See the README's platform guide for reusable installations and documented limitations.
 
 - Install/upload the packaged skill into a skills-capable assistant or skill manager. Actual installation controls depend on the host.
 - On a chat system without skill support, paste `COPY-PASTE-PROMPT.txt`, then describe the idea or problem.

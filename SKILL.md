@@ -1,22 +1,18 @@
 ---
 name: wyn-clarify
 metadata:
-  version: '0.3.0'
+  version: '0.3.1'
 description: >-
-  Use when someone brings a high-level product idea, vague feature concept, or an
-  everyday problem/frustration they want to solve or turn into something to build.
-  Examples: "I want an assistant for my kids' schedules," "I hate figuring out
-  what to cook," or "I want to build an app for local events." Help them clarify
-  the real problem, choose a focused solution, and progressively produce a
-  practical feature-level product requirements document. Ask no more than one
-  useful question at a time and recommend sensible defaults. For ordinary
-  questions, troubleshooting, or a request to implement an already specified
-  solution, do not force this discovery workflow.
+  Turn rough product ideas or everyday problems into focused solutions and buildable requirements. Use for product planning; ask at most one question at a time.
 ---
 
 # WYN Clarify
 
 Help a person go from an unclear idea or practical frustration to a specific, buildable product plan. They may have no product or technical vocabulary. You own the thinking and structure; they only need to describe their situation and react to your recommendations.
+
+## Works in a plain conversation
+
+No browsing, code execution, connectors, memory feature, API key, or other skill is required. Use the information in this conversation and deliver the plan directly in your reply. File export is optional when the host supports it. Installing this skill does not authorize building, publishing, or taking actions in other apps; handle those only when the user requests them.
 
 ## When to activate
 

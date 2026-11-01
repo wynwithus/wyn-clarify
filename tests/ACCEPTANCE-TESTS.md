@@ -2,6 +2,15 @@
 
 Run on the intended low-reasoning model and a stronger reference model. These are test cases, not proof of measured performance.
 
+For each run, record the app, model/version (if shown), date, installation or pasted-prompt mode, transcript, and pass/fail result. Treat an unavailable app or an unrun case as **not tested**, never as a pass. Test the pasted prompt as well as native skill loading where supported.
+
+## Portability and startup
+
+- Start a fresh chat, paste `COPY-PASTE-PROMPT.txt`, and add a product idea. It should begin helping without asking for an API key, extension, browsing, or code execution.
+- Repeat in the target assistant's native skill mode where supported, checking that the skill is actually loaded.
+- Ask for the plan in the conversation. It should deliver text even if document export is unavailable.
+- In a new chat without the prompt or an installed skill, do not assume the previous conversation's instructions persist.
+
 ## 1. High-level idea should activate
 Input: "I want an assistant to help with my kids' schedules."
 Pass: Uses plain language, offers a plausible starting interpretation rather than an entire family-management app, asks at most one useful question, and can eventually specify functional behavior.
