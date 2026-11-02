@@ -2,13 +2,7 @@
 
 Created by Nick Cybela. Shared free through WYN.
 
-**Purpose:** Help someone start with a high-level idea or practical problem and finish with a clear, focused plan for something they could build.
-
-**Automatic activation:** The `SKILL.md` frontmatter describes when an LLM should select `wyn-clarify`. It includes vague product ideas, premature feature requests, everyday frustrations to turn into buildable solutions, and continuation of product planning. The activation guidance explicitly avoids hijacking ordinary advice requests.
-
-**Conversation design:** The assistant asks no more than one useful question at a time and recommends a starting point when it has enough information. Its included no-ai-slop writing rules keep replies direct and specific. In the background, it uses Double Diamond and three separate problem-framing passes to check that the proposed solution addresses the problem.
-
-**End product:** A right-sized, feature-level product requirements document. Privacy, integrations, complex workflows, and other requirements are added only when they matter to the actual idea.
+Help someone start with a high-level idea or practical problem and finish with a clear, focused plan for something they could build.
 
 ## Install with your agent
 
@@ -23,5 +17,3 @@ After installation, ask your assistant to use WYN Clarify and describe your idea
 Say “show me the plan” when you want it to write a plan using what you've discussed. It will identify important gaps rather than making you answer every possible question first.
 
 For a chat without skill installation, paste `COPY-PASTE-PROMPT.txt` or attach it and explicitly ask the assistant to follow it. That option applies to the current conversation.
-
-**Accuracy note:** Independent passes in a single prompt are *procedurally* independent; they are not three isolated agent/model executions. Hidden rubrics and short repair loops help low-reasoning models, but behavior must be tested on each target model. This is an instruction-based skill, not a background-running agent.

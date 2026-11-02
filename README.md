@@ -48,8 +48,6 @@ If your chat cannot install reusable skills, [COPY-PASTE-PROMPT.txt](COPY-PASTE-
 
 This option applies to the current conversation. Reuse in another chat depends on whether your app saves instructions.
 
-Installation support and controls depend on your assistant. See the official [Claude skill guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Claude Code skills](https://code.claude.com/docs/en/skills), and [Agent Skills format](https://agentskills.io/specification). Package and file checks do not establish tested behavior in every assistant; the [manual acceptance checks](tests/ACCEPTANCE-TESTS.md) describe how to check your app and model.
-
 ## What you get
 
 - A specific problem and the person who experiences it.
@@ -60,15 +58,12 @@ Installation support and controls depend on your assistant. See the official [Cl
 
 The skill does not need an API key, an account with WYN, or a background service. Your chosen AI tool may have its own fees. It does not automatically build or publish your product.
 
-## Package
+## Files
 
-- [SKILL.md](SKILL.md) — complete skill instructions, version 0.3.3.
+- [SKILL.md](SKILL.md) — complete skill instructions.
 - [START-HERE.md](START-HERE.md) — workflow and usage notes.
 - [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt) — an alternative for chats without skill support.
 - [references/no-ai-slop.md](references/no-ai-slop.md) — included writing guidance, with its [third-party MIT notice](references/no-ai-slop-LICENSE).
-- [tests/ACCEPTANCE-TESTS.md](tests/ACCEPTANCE-TESTS.md) — manual behavior checks, not measured performance claims.
-
-The instructions draw on Double Diamond and problem-framing techniques associated with Min Basadur, S. I. Hayakawa, and Stanford d.school. The three framing passes are performed within one assistant; they are not separate model or agent executions. Results depend on your model and the information you provide.
 
 ## Rights and attribution
 
