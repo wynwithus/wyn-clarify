@@ -8,43 +8,47 @@ You can say “use your recommendation” or “show me the plan” whenever you
 
 The skill includes writing guidance for its replies and the finished plan, so you do not need to install another skill.
 
-## Start in your AI chat
+## Install with your agent
 
-1. Open [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt).
-2. Copy its contents into your AI chat.
-3. Add your idea after “Begin with this idea or problem.”
+Give your agent this repository's URL and ask it to install **wyn-clarify**. The agent can handle the setup for you.
 
-Try: “I want to build something that helps our event volunteers know where they need to be.”
+For example:
 
-This needs no installation, API key, connector, browsing, or code execution. It applies to the current conversation; paste it again in a new chat unless your assistant explicitly saves reusable instructions. You do not need to type `/wyn-clarify` in an ordinary chat.
+> Install wyn-clarify from https://github.com/wynwithus/wyn-clarify as a reusable skill for my assistant.
 
-If attaching the text file instead, send: **“Follow the instructions in the attached WYN Clarify prompt for this conversation. My idea is: [describe your idea].”** Attaching a file alone may cause an assistant to summarize it rather than use it.
+### Instructions for agents
 
-## Install as a skill
+If the user has asked you to install this skill, **perform the installation** using [INSTALL.md](INSTALL.md). The skill is at the repository root: `SKILL.md` and its supporting files belong in one `wyn-clarify/` skill folder. Use your host's skill installer or skills directory, verify the installed files, and tell the user where the skill was installed and how to use it.
 
-[Download wyn-clarify.zip](https://github.com/wynwithus/wyn-clarify/releases/latest/download/wyn-clarify.zip), then use your assistant's skill import or installation option. The ZIP contains a `wyn-clarify/` folder with `SKILL.md` at its root. Installation controls vary by assistant; a plain chat without skill support can use the prompt above.
+### Install from a terminal
 
-For Codex, you can ask:
+If you use the [Skills CLI](https://github.com/vercel-labs/skills), run:
 
-> Install the wyn-clarify skill from https://github.com/wynwithus/wyn-clarify into my personal skills folder. Read its SKILL.md, then help me clarify my idea: [describe your idea].
+```bash
+npx skills add wynwithus/wyn-clarify --skill wyn-clarify
+```
 
-If installing manually, place this repository's files in a folder named `wyn-clarify` inside your assistant's skills directory. For a personal Codex installation, that is `~/.codex/skills/wyn-clarify/`. Start a new session, then ask to use `$wyn-clarify`.
+Choose your assistant and installation scope when prompted. Add `--global` for an installation available across projects. This optional method requires Node.js 22.20 or later; an agent can also use its own installer.
 
-## Choose your assistant
+## Import the ZIP yourself
 
-| Assistant | How to start | Reusable installation |
-| --- | --- | --- |
-| Claude | Paste the prompt into a conversation. | In **Customize → Skills**, create/upload a skill using the release ZIP and enable it. Availability depends on your account and administrator settings. |
-| Claude Code | Paste the prompt, or use `/wyn-clarify` after installation. | Put the package in `~/.claude/skills/wyn-clarify/` for personal use, or `.claude/skills/wyn-clarify/` in one project. |
-| Grok web/mobile | Paste the prompt, or attach the TXT file with the explicit instruction above. | Chat file uploads do not by themselves establish a persistent skill installation. |
-| Grok Build | Paste the prompt, or use `/wyn-clarify` after installation. | Put the package in `~/.grok/skills/wyn-clarify/` for personal use, or `.grok/skills/wyn-clarify/` in one project. |
-| Meta Muse | Paste the prompt and your idea into the conversation. | Custom ZIP skill import has not been verified; this package does not depend on it. |
-| Codex | Ask to use `$wyn-clarify` after installation. | Install into your personal skills folder as described above. |
-| Other text assistants | Paste the prompt into the conversation. | Use saved instructions only if your app supports them; its limits and behavior may differ. |
+[Download wyn-clarify.zip](https://github.com/wynwithus/wyn-clarify/releases/latest/download/wyn-clarify.zip) and use your assistant's skill import option. The ZIP contains a `wyn-clarify/` folder with `SKILL.md` at its root and all supporting files.
 
-These instructions were checked against official documentation on November 1, 2026: [Claude skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Claude skill packaging](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills), [Claude Code skills](https://code.claude.com/docs/en/skills), [Grok uploads](https://docs.x.ai/grok/faq), [Grok Build skills](https://docs.x.ai/build/features/skills-plugins-marketplaces), and [Muse](https://ai.meta.com/muse/). Native installation depends on the host; the conversation prompt is the common starting point.
+For a manual file installation, put that folder in your assistant's skills directory. For example, Claude Code uses `~/.claude/skills/wyn-clarify/` for personal skills. Agents should follow [INSTALL.md](INSTALL.md) to choose the correct location for their host.
 
-**Validation status:** The package structure and metadata are checked, including a description below Claude's documented 200-character limit. This is not a claim that behavior has been tested in every assistant. Run the [manual acceptance checks](tests/ACCEPTANCE-TESTS.md) in each target app/model before labeling that combination tested. A model may follow the instructions differently; hidden scoring cannot establish correctness on its own.
+## Use after installation
+
+Ask your assistant to use WYN Clarify, then describe your idea. For example: “Use WYN Clarify to help me plan a tool for our event volunteers.” Claude Code also supports `/wyn-clarify`; Codex supports `$wyn-clarify`.
+
+Say “show me the plan” when you want it to write a plan from the discussion so far.
+
+## Chat without skill installation
+
+If your chat cannot install reusable skills, [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt) is an alternative. Paste its contents and add your idea after “Begin with this idea or problem.” Or attach the file and say: “Follow the attached WYN Clarify prompt for this conversation. My idea is: …”
+
+This option applies to the current conversation. Reuse in another chat depends on whether your app saves instructions.
+
+Installation support and controls depend on your assistant. See the official [Claude skill guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude), [Claude Code skills](https://code.claude.com/docs/en/skills), and [Agent Skills format](https://agentskills.io/specification). Package and file checks do not establish tested behavior in every assistant; the [manual acceptance checks](tests/ACCEPTANCE-TESTS.md) describe how to check your app and model.
 
 ## What you get
 

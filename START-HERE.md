@@ -10,14 +10,18 @@ Created by Nick Cybela. Shared free through WYN.
 
 **End product:** A right-sized, feature-level product requirements document. Privacy, integrations, complex workflows, and other requirements are added only when they matter to the actual idea.
 
-## Using it
+## Install with your agent
 
-For the least setup, paste `COPY-PASTE-PROMPT.txt` into a new chat and add your idea at the end. No tools or extensions are required. This applies to that conversation; a new chat may need the prompt again. See the README's platform guide for reusable installations and documented limitations.
+Give your agent https://github.com/wynwithus/wyn-clarify and ask it to install `wyn-clarify` as a reusable skill. Agents: complete the setup in [INSTALL.md](INSTALL.md), verify the installed files, and report the installation path and how to use the skill.
+
+To install it yourself, import the release ZIP using your assistant's skill controls, or put the complete `wyn-clarify/` folder in its skills directory. See [README.md](README.md) for the terminal command and setup options.
+
+## Use it
+
+After installation, ask your assistant to use WYN Clarify and describe your idea or problem. Try: “I want to build a tool for coordinating event volunteers.”
 
 Say “show me the plan” when you want it to write a plan using what you've discussed. It will identify important gaps rather than making you answer every possible question first.
 
-- Install/upload the packaged skill into a skills-capable assistant or skill manager. Actual installation controls depend on the host.
-- On a chat system without skill support, paste `COPY-PASTE-PROMPT.txt`, then describe the idea or problem.
-- Try: "I want to build an assistant for my kids' schedules," "I hate deciding what to make for dinner and want to solve it," or "Help me develop a tool for coordinating event volunteers."
+For a chat without skill installation, paste `COPY-PASTE-PROMPT.txt` or attach it and explicitly ask the assistant to follow it. That option applies to the current conversation.
 
 **Accuracy note:** Independent passes in a single prompt are *procedurally* independent; they are not three isolated agent/model executions. Hidden rubrics and short repair loops help low-reasoning models, but behavior must be tested on each target model. This is an instruction-based skill, not a background-running agent.
