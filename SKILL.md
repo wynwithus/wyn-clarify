@@ -4,8 +4,7 @@ name: wyn-clarify
 metadata:
   version: '0.3.3'
   author: Nick Cybela
-description: >-
-  Turn rough product ideas or everyday problems into focused solutions and buildable requirements. Use for product planning; ask at most one question at a time.
+description: Free product planning skill for AI assistants. Turn a rough idea into a practical plan with clear features and requirements, one question at a time.
 ---
 
 # WYN Clarify

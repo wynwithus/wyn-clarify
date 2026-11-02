@@ -1,8 +1,8 @@
 # WYN Clarify
 
-A free AI skill by [Nick Cybela](https://wynwithus.com/authors/nick-cybela/), shared through [WYN](https://wynwithus.com).
+Free product planning skill for AI assistants. Turn a rough idea into a practical plan with clear features and requirements, one question at a time.
 
-Describe your idea or the problem you want to solve in your own words. WYN Clarify helps you work out what to build, asks at most one question at a time, and writes a plan that explains how the first version should work.
+Created by [Nick Cybela](https://wynwithus.com/authors/nick-cybela/), shared through [WYN](https://wynwithus.com).
 
 You can say “use your recommendation” or “show me the plan” whenever you want to move forward. It uses what you've told it and identifies the important gaps.
 
@@ -53,8 +53,6 @@ This option applies to the current conversation. Reuse in another chat depends o
 - The journey from starting the task to getting a useful result.
 - Essential features and clear ways to check that they work.
 - Important assumptions and unanswered questions, clearly labeled.
-
-The skill does not need an API key, an account with WYN, or a background service. Your chosen AI tool may have its own fees. It does not automatically build or publish your product.
 
 ## Files
 
