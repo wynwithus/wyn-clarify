@@ -20,7 +20,7 @@ For a README or credits page, you can use:
 
 That credit line does not replace the copyright and permission notices required by the license.
 
-The included writing guidance is adapted from [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop). Keep his credit and the [retained upstream MIT License](references/no-ai-slop-LICENSE) with copies or substantial portions of that material.
+The bundled third-party writing guidance retains its own [MIT notice](references/no-ai-slop-LICENSE). Keep that copyright and permission notice with copies or substantial portions of the adapted material.
 
 ## License and warranty
 

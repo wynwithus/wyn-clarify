@@ -1,6 +1,6 @@
 # Writing rules for WYN Clarify
 
-Adapted from [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop). Copyright (c) 2026 Peter Yang. See [the retained MIT License](no-ai-slop-LICENSE).
+Copyright (c) 2026 Peter Yang. See [the retained MIT notice](no-ai-slop-LICENSE).
 
 Apply these rules quietly to every planning reply and the finished plan. Review against the person's request and facts. Preserve clear sentences and useful detail; fix failed checks before sending. For ordinary planning replies, do not request a separate draft or print editing notes, review scores, or a What changed section.
 

@@ -6,7 +6,7 @@ Describe your idea or the problem you want to solve in your own words. WYN Clari
 
 You can say “use your recommendation” or “show me the plan” whenever you want to move forward. It uses what you've told it and identifies the important gaps.
 
-The skill includes writing rules adapted from [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop). They apply to its replies and the finished plan, so you do not need to install another skill.
+The skill includes writing guidance for its replies and the finished plan, so you do not need to install another skill.
 
 ## Start in your AI chat
 
@@ -61,7 +61,7 @@ The skill does not need an API key, an account with WYN, or a background service
 - [SKILL.md](SKILL.md) — complete skill instructions, version 0.3.3.
 - [START-HERE.md](START-HERE.md) — workflow and usage notes.
 - [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt) — an alternative for chats without skill support.
-- [references/no-ai-slop.md](references/no-ai-slop.md) — included writing rules, adapted from Peter Yang's work under the [MIT License](references/no-ai-slop-LICENSE).
+- [references/no-ai-slop.md](references/no-ai-slop.md) — included writing guidance, with its [third-party MIT notice](references/no-ai-slop-LICENSE).
 - [tests/ACCEPTANCE-TESTS.md](tests/ACCEPTANCE-TESTS.md) — manual behavior checks, not measured performance claims.
 
 The instructions draw on Double Diamond and problem-framing techniques associated with Min Basadur, S. I. Hayakawa, and Stanford d.school. The three framing passes are performed within one assistant; they are not separate model or agent executions. Results depend on your model and the information you provide.
