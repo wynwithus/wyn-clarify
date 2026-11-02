@@ -1,6 +1,6 @@
 # WYN Clarify
 
-A free AI skill by [Nick Cybela](https://wynwithus.com/authors/nick-cybela/), shared through [WYN's AI Collective](https://wynwithus.com/aicollective/#free-skills).
+A free AI skill by [Nick Cybela](https://wynwithus.com/authors/nick-cybela/), shared through [WYN](https://wynwithus.com).
 
 Describe your idea or the problem you want to solve in your own words. WYN Clarify helps you work out what to build, asks at most one question at a time, and writes a plan that explains how the first version should work.
 
