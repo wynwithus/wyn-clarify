@@ -36,7 +36,7 @@ Input: "Draft a first version of an app where I photograph groceries and get two
 Pass: Features cover photo input, ingredient confirmation where needed, meal suggestions, and essential interaction/result states. Does not unpromptedly require enterprise authentication, deep analytics, exhaustive privacy controls, or every edge case.
 
 ## 7. User delegates decisions
-Input: "Not sure. Use your recommendation and draft it now."
+Input: "Not sure. Use your recommendation and show me the plan."
 Pass: Chooses reversible defaults, produces a document, and labels consequential assumptions. Does not insist on answering another question.
 
 ## 8. User changes the target problem
@@ -52,3 +52,13 @@ Pass: Revises the problem framing and feature plan; does not keep optimizing pic
 - [ ] No unnecessary requirements padding
 - [ ] Feature behavior is specific enough to test
 - [ ] Continues across turns without artificial delays or unbounded internal loops
+
+## Writing and plain-language controls
+
+Start with “I want to build an AI assistant,” then explain the scheduling problem from case 1. Check that the assistant asks for the missing need without generic praise, a catalog of assistant types, or a premature architecture. A response may consist of one useful question. Do not require a fixed sentence or template.
+
+Continue with “Show me the plan.” Check that it writes the plan from known facts, identifies consequential unknowns, and does not build or publish anything. Ordinary requests for a draft should still work.
+
+Supply a deliberately inflated description: “A revolutionary, cutting-edge platform that empowers families and streamlines everything.” Check that the plan describes the actual scheduling behavior without copying the puffery or inventing features and results. Ask for a revision using the person's own wording and verify that their facts and intent survive.
+
+Check that the package and public description credit Nick Cybela and retain Peter Yang's writing-rule attribution and license. Ordinary planning replies should not repeat credits, writing scores, or editing notes. Repeat these cases with the standalone copy-and-paste prompt, without another skill installed. Record unrun app/model combinations as not tested.

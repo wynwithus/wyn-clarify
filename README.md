@@ -1,10 +1,12 @@
 # WYN Clarify
 
-**Turn a rough idea into a focused plan for something you can build.**
+A free AI skill by [Nick Cybela](https://wynwithus.com/authors/nick-cybela/), shared through [WYN's AI Collective](https://wynwithus.com/aicollective/#free-skills).
 
-WYN Clarify is a free AI skill by [WYN](https://wynwithus.com/aicollective/#free-skills). Bring a product idea, an unclear feature, or an everyday frustration you want to solve. It helps you find the underlying problem, choose a useful first version, and write a practical product requirements document with testable feature behavior.
+Describe your idea or the problem you want to solve in your own words. WYN Clarify helps you work out what to build, asks at most one question at a time, and writes a plan that explains how the first version should work.
 
-It uses plain language, recommends sensible defaults, and asks at most one useful question at a time. You can say **“use your recommendation”** or **“draft it now”** whenever you want to move forward.
+You can say “use your recommendation” or “show me the plan” whenever you want to move forward. It uses what you've told it and identifies the important gaps.
+
+The skill includes writing rules adapted from [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop). They apply to its replies and the finished plan, so you do not need to install another skill.
 
 ## Start in your AI chat
 
@@ -49,16 +51,17 @@ These instructions were checked against official documentation on November 1, 20
 - A specific problem and the person who experiences it.
 - A recommended solution and a small first-version scope.
 - The journey from starting the task to getting a useful result.
-- Essential features with observable acceptance criteria.
+- Essential features and clear ways to check that they work.
 - Important assumptions and unanswered questions, clearly labeled.
 
 The skill does not need an API key, an account with WYN, or a background service. Your chosen AI tool may have its own fees. It does not automatically build or publish your product.
 
 ## Package
 
-- [SKILL.md](SKILL.md) — complete skill instructions, version 0.3.1.
+- [SKILL.md](SKILL.md) — complete skill instructions, version 0.3.2.
 - [START-HERE.md](START-HERE.md) — workflow and usage notes.
 - [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt) — an alternative for chats without skill support.
+- [references/no-ai-slop.md](references/no-ai-slop.md) — included writing rules, adapted from Peter Yang's work under the [MIT License](references/no-ai-slop-LICENSE).
 - [tests/ACCEPTANCE-TESTS.md](tests/ACCEPTANCE-TESTS.md) — manual behavior checks, not measured performance claims.
 
 The instructions draw on Double Diamond and problem-framing techniques associated with Min Basadur, S. I. Hayakawa, and Stanford d.school. The three framing passes are performed within one assistant; they are not separate model or agent executions. Results depend on your model and the information you provide.

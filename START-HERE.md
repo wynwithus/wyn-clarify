@@ -1,16 +1,20 @@
-# WYN Clarify (v0.3.1)
+# WYN Clarify (v0.3.2)
+
+Created by Nick Cybela. Shared free through WYN.
 
 **Purpose:** Help someone start with a high-level idea or practical problem and finish with a clear, focused plan for something they could build.
 
 **Automatic activation:** The `SKILL.md` frontmatter describes when an LLM should select `wyn-clarify`. It includes vague product ideas, premature feature requests, everyday frustrations to turn into buildable solutions, and continuation of product planning. The activation guidance explicitly avoids hijacking ordinary advice requests.
 
-**Conversation design:** The user gets an insight, the assistant's recommendation, and no more than one consequential question. In the background the assistant uses Double Diamond and three separate problem-framing passes with individual criteria, then consolidates their outputs.
+**Conversation design:** The assistant asks no more than one useful question at a time and recommends a starting point when it has enough information. Its included no-ai-slop writing rules keep replies direct and specific. In the background, it uses Double Diamond and three separate problem-framing passes to check that the proposed solution addresses the problem.
 
 **End product:** A right-sized, feature-level product requirements document. Privacy, integrations, complex workflows, and other requirements are added only when they matter to the actual idea.
 
 ## Using it
 
 For the least setup, paste `COPY-PASTE-PROMPT.txt` into a new chat and add your idea at the end. No tools or extensions are required. This applies to that conversation; a new chat may need the prompt again. See the README's platform guide for reusable installations and documented limitations.
+
+Say “show me the plan” when you want it to write a plan using what you've discussed. It will identify important gaps rather than making you answer every possible question first.
 
 - Install/upload the packaged skill into a skills-capable assistant or skill manager. Actual installation controls depend on the host.
 - On a chat system without skill support, paste `COPY-PASTE-PROMPT.txt`, then describe the idea or problem.

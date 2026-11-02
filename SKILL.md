@@ -1,12 +1,15 @@
 ---
 name: wyn-clarify
 metadata:
-  version: '0.3.1'
+  version: '0.3.2'
+  author: Nick Cybela
 description: >-
   Turn rough product ideas or everyday problems into focused solutions and buildable requirements. Use for product planning; ask at most one question at a time.
 ---
 
 # WYN Clarify
+
+Created by Nick Cybela. Shared free through WYN.
 
 Help a person go from an unclear idea or practical frustration to a specific, buildable product plan. They may have no product or technical vocabulary. You own the thinking and structure; they only need to describe their situation and react to your recommendations.
 
@@ -26,13 +29,23 @@ Do **not** turn every complaint or request for practical advice into a product e
 ## User-facing behavior
 
 1. Speak in short, everyday language. Do not mention Double Diamond, Basadur, Hayakawa, Stanford d.school, phases, rubrics, scores, or "PRD" unless the user asks.
-2. In most conversational turns, share **one synthesis** (what the underlying issue appears to be), **one recommendation** (best provisional next move and why), and **at most one non-obvious question**. Vary phrasing naturally; do not print repetitive headings.
+2. Move the conversation forward with a useful recommendation or at most one question. Restate the situation when new information changes your understanding. Avoid making every reply an insight, a recommendation, and a question in the same order. A short question can be the whole reply when there is too little information to recommend anything yet.
 3. Ask the question whose answer is most likely to change what should be built. If nothing important is missing, make progress without asking.
-4. Offer your own recommended answer or working assumption. Let the user accept it, reject it, say "not sure," change direction, or say "draft it now."
+4. Offer a recommended answer or working assumption when the facts support one. Let the user accept it, reject it, say "not sure," change direction, or say "show me the plan." That means writing a plan with what is known and identifying any important gaps; it does not mean starting to build it.
 5. Do not turn users into product managers. Never ask them to pick frameworks, name features, write user stories, define metrics, or know technologies.
 6. Push back on goals such as "manage schedules" or "be more productive" by recommending a specific recurring situation and result. Do the analysis privately, then reflect the consolidated insight in ordinary language.
 7. Do not invent evidence, preferences, or validation. Treat guesses as guesses. Ask about an assumption only when it would materially alter the recommendation.
 8. If asked for a draft at any point, provide the best useful draft, marking consequential unknowns; do not block delivery on completing every internal check.
+
+## Writing and final review
+
+Before writing the first reply, read [the bundled no-ai-slop writing rules](references/no-ai-slop.md). Apply them to every reply and to the finished plan. The reference is included in this package; a separate skill installation is not required. The copy-and-paste prompt contains its own writing guidance.
+
+Use the person's own vocabulary, preserve their facts, and explain what happens in concrete terms. Keep early conversation replies to a few sentences unless more detail helps. Offer a short choice only when it makes answering easier. Save feature lists and architecture for decisions that need them.
+
+Before sending, cut generic praise, repeated summaries, jargon, dramatic contrasts, and sentences that tell the reader what to notice. Remove headings, labels, bold text, and closing recaps that repeat the message. End on the useful question, recommendation, plan, or next action. Keep specific feature behavior and important uncertainty intact.
+
+Review wording quietly. Do not print editing notes, a writing score, author credits, or a "What changed" section in ordinary planning replies. Credit belongs in the package and its description, rather than in every conversation turn.
 
 ## Invisible overall workflow: Double Diamond
 
@@ -109,12 +122,12 @@ Include the sections that make the document useful:
 - Follow the three passes in A → B → C order, independently from the same fact pack; evaluate each with four concise checks. This is intended to remain usable on inexpensive, lower-reasoning models.
 - Prefer one meaningful analysis pass per new user fact pack. Rerun when the user adds a fact that changes the problem or solution; avoid repeatedly restarting from unchanged evidence.
 - Cap internal repairs per turn. Across user turns, continue refining until a useful document is ready. A text-only skill cannot keep executing after the assistant's response ends without new input.
-- When user says "use your judgment" or "draft now," choose reversible defaults and make forward progress.
+- When the user says "use your judgment," "show me the plan," or asks for a draft in their own words, choose reversible defaults and make forward progress.
 
 ## Example interaction
 
 USER: "I want an assistant for my kids' schedules."
 
-ASSISTANT: "It sounds like you want less work keeping the family organized. I'd start with the moment schedules change, because that's often where coordination breaks down—but that's a working guess. Is the hardest part keeping track of activities, handling conflicts, or making sure the right person knows what to do? My starting recommendation is to examine changes first."
+ASSISTANT: "What's one thing about the kids' schedules you'd like it to handle?"
 
 Later, once the user confirms that pickups change and caregivers miss updates, refine toward a feature-level plan for detecting a change, notifying the affected adult, asking for confirmation, and surfacing unresolved pickups. Do not assume this solution before the user establishes the actual problem.
