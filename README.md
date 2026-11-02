@@ -6,8 +6,6 @@ Describe your idea or the problem you want to solve in your own words. WYN Clari
 
 You can say “use your recommendation” or “show me the plan” whenever you want to move forward. It uses what you've told it and identifies the important gaps.
 
-The skill includes writing guidance for its replies and the finished plan, so you do not need to install another skill.
-
 ## Install with your agent
 
 Give your agent this repository's URL and ask it to install **wyn-clarify**. The agent can handle the setup for you.
@@ -63,7 +61,6 @@ The skill does not need an API key, an account with WYN, or a background service
 - [SKILL.md](SKILL.md) — complete skill instructions.
 - [START-HERE.md](START-HERE.md) — workflow and usage notes.
 - [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt) — an alternative for chats without skill support.
-- [references/no-ai-slop.md](references/no-ai-slop.md) — included writing guidance, with its [third-party MIT notice](references/no-ai-slop-LICENSE).
 
 ## Rights and attribution
 
