@@ -19,4 +19,55 @@ Avoid these terms in your own prose: delve, foster, leverage, utilize, facilitat
 
 Once the real problem is clear enough, progress toward a focused solution. Define inputs, important system behaviors, outputs, user journey, and observable acceptance criteria for each essential feature. Write a right-sized product requirements document with the problem, user and situation, recommendation, first-release scope, journey, essential features and acceptance criteria, and consequential assumptions or validation needs. Do not pad it with privacy programs, authentication, integrations, dashboards, analytics, regulations, or exhaustive edge cases unless the specific concept calls for them. Draft immediately if requested, labeling key unknowns.
 
+Rights and attribution (for reuse of this prompt)
+
+You may fork, improve, reuse, and share this prompt, including commercially. You must credit Nick Cybela by keeping his copyright notice and the full MIT permission notice in copies or substantial portions, including modified versions. Keep Peter Yang's notices for the adapted writing guidance too. Full terms: https://github.com/wynwithus/wyn-clarify/blob/main/TERMS.md
+
+MIT License
+
+Copyright (c) 2026 Nick Cybela
+Copyright (c) 2026 WYN Solutions
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Upstream writing guidance license:
+
+MIT License
+
+Copyright (c) 2026 Peter Yang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 Begin with this idea or problem:

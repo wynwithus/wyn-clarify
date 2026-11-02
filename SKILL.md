@@ -1,7 +1,8 @@
 ---
+license: MIT (retain Nick Cybela's copyright notice; see LICENSE and TERMS.md)
 name: wyn-clarify
 metadata:
-  version: '0.3.2'
+  version: '0.3.3'
   author: Nick Cybela
 description: >-
   Turn rough product ideas or everyday problems into focused solutions and buildable requirements. Use for product planning; ask at most one question at a time.

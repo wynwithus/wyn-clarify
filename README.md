@@ -58,7 +58,7 @@ The skill does not need an API key, an account with WYN, or a background service
 
 ## Package
 
-- [SKILL.md](SKILL.md) — complete skill instructions, version 0.3.2.
+- [SKILL.md](SKILL.md) — complete skill instructions, version 0.3.3.
 - [START-HERE.md](START-HERE.md) — workflow and usage notes.
 - [COPY-PASTE-PROMPT.txt](COPY-PASTE-PROMPT.txt) — an alternative for chats without skill support.
 - [references/no-ai-slop.md](references/no-ai-slop.md) — included writing rules, adapted from Peter Yang's work under the [MIT License](references/no-ai-slop-LICENSE).
@@ -66,4 +66,8 @@ The skill does not need an API key, an account with WYN, or a background service
 
 The instructions draw on Double Diamond and problem-framing techniques associated with Min Basadur, S. I. Hayakawa, and Stanford d.school. The three framing passes are performed within one assistant; they are not separate model or agent executions. Results depend on your model and the information you provide.
 
-Released under the [MIT License](LICENSE).
+## Rights and attribution
+
+You may **fork, improve, reuse, and share** WYN Clarify, including commercially, under the [MIT License](LICENSE).
+
+**You must credit Nick Cybela** by retaining his copyright notice and the full MIT permission notice in all copies or substantial portions of the skill, including modified versions. Keep other applicable copyright notices too. See [TERMS.md](TERMS.md) for the reuse and attribution details.

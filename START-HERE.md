@@ -1,4 +1,4 @@
-# WYN Clarify (v0.3.2)
+# WYN Clarify (v0.3.3)
 
 Created by Nick Cybela. Shared free through WYN.
 
